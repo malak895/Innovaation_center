@@ -1,0 +1,31 @@
+nav{
+  color: #8E3535;
+}
+.pos{
+  position: absolute;
+  right: 60px;
+
+}
+.col1{
+  background-color: white;
+  z-index: 1;
+}
+nav a img{
+  position: relative;
+  top:8px;
+  left: 10px;
+}
+div ul li {
+  margin-right: 30px;
+}
+div ul li select{
+  border: 0px;
+
+}
+div ul li select option{
+  text-align: end;
+}
+.nor{
+  position: relative;
+  left: 50px;
+}

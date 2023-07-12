@@ -1,0 +1,731 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(0);
+    box-shadow:
+      inset 0 0 60px whitesmoke,
+      inset 20px 0 80px #ff0073,
+      inset -20px 0 80px #0ff,
+      inset 20px 0 300px rgb(255, 0, 115),
+      inset -20px 0 300px #0ff,
+      0 0 25px #fff,
+      -10px 0 35px rgb(255, 0, 115),
+      10px 0 35px #0ff;
+
+}
+
+.body{
+    opacity: .2;
+    transition: 0.5s;
+    text-align: center;
+  }
+  
+
+.login-card {
+    width: 450px;
+    background: rgba(255, 255, 255, .5);
+    padding: 4rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.login-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, .15);
+    transform: rotate(-6deg);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.login-card-logo,
+.login-card-header,
+.login-card-footer {
+    text-align: center;
+}
+
+.login-card a {
+    text-decoration: none;
+    color: #35339a;
+}
+
+.login-card a:hover {
+    text-decoration: underline;
+}
+
+.login-card-header {
+    margin-bottom: 2rem;
+}
+
+.login-card-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.login-card-header h1+div {
+    font-size: calc(1rem * .8);
+    opacity: .8;
+}
+/* ---------- */
+
+/* Login Card Form */
+.login-card-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.login-card-form .form-item {
+    position: relative;
+}
+
+.login-card-form .form-item .form-item-icon {
+    position: absolute;
+    top: .82rem;
+    left: 1.4rem;
+    font-size: 1.3rem;
+    opacity: .4;
+}
+
+.login-card-form .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.login-card-form .form-item-other {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(1rem * .8);
+    margin-bottom: .5rem;
+}
+/* ---------- */
+
+/* Login Card Footer */
+.login-card-footer {
+    margin-top: 1.5rem;
+    font-size: calc(1rem * .8);
+}
+
+.login-card input[type="text"],
+.login-card input[type="password"],
+.login-card input[type="email"] {
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, .3);
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 100%;
+   
+    transition : background .5s;
+}
+
+.login-card input:focus {
+    background: white;
+}
+
+.login-card input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: black;
+}
+
+.login-card button {
+    background: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5s;
+}
+
+.login-card button:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+}
+/* ---------- */
+
+/* Login Card Social Buttons */
+.login-card-social {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.login-card-social>div {
+    opacity: .8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: calc(1rem * .8);
+}
+
+.login-card-social-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.login-card-social-btns a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, .6);
+    border-radius: 100px;
+    transition: all .5s;
+}
+
+.login-card-social-btns a:hover {
+    background-color: white;
+    transform: scale(1.1);
+}
+/* ---------- */
+
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    body {
+        padding: 2rem 0;
+    }
+
+    .login-card {
+        width: 280px;
+        padding: 2rem;
+    }
+
+}
+/* ---------- */
+
+/* Login Card Form Elements */
+.login-card input[type="text"],
+.login-card input[type="password"],
+.login-card input[type="email"] {
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, .3);
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 100%;
+    transition: background .5s;
+}
+
+.login-card input:focus {
+    background: white;
+}
+
+.login-card input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: black;
+}
+
+.login-card button {
+    background: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5s;
+}
+
+.login-card button:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+}
+/* ---------- */
+.body
+ *:where(:not(html, iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+    display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+    cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+    list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+    max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+    border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+    white-space: revert;
+}
+
+
+meter {
+    -webkit-appearance: revert;
+    appearance: revert;
+}
+
+
+::placeholder {
+    color: unset;
+}
+
+
+:where([hidden]) {
+    display: none;
+}
+
+
+:where([contenteditable]:not([contenteditable="false"])) {
+    -moz-user-modify: read-write;
+    -webkit-user-modify: read-write;
+    overflow-wrap: break-word;
+    
+   
+}
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,500&family=Inter:wght@500&display=swap');
+
+  .color1 {
+    position: absolute;
+    width: 1038.03px;
+    height: 809.01px;
+    left: -338px;
+    top: -182px;
+  
+    /* pink red/500 */
+  
+    background: #DF0B5D;
+    border: 1px solid #000000;
+    filter: blur(400px);
+  }
+  .arc{
+    position: absolute;
+    top: 5%;
+    left:20%;
+  }
+  .circleBase {
+    border-radius: 50%;
+  }
+  
+  .circle1 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: #004F7B;
+    border: 1px solid #000;
+    left:40%;
+    top:220%
+  }
+  .tt{
+    position: relative;
+    left: 45%;
+    top:198%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+  }
+  .ttt{
+    position: relative;
+    left: 64%;
+    top:155%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+  }
+  .circle2 {
+    width: 50px;
+    height: 50px;
+    background: #009780;;
+    border: 1px solid #000;
+    position: relative;
+    left:60%;
+    top:177%
+  }
+  .color2 {
+    position: absolute;
+    left: 70.49%;
+    right: -8.96%;
+    top: -7.89%;
+    bottom: 60.6%;
+    background: #009780;
+    filter: blur(400px);
+  }
+  
+  .color3 {
+    position: absolute;
+    width: 1110.82px;
+    height: 653.45px;
+    left: 125px;
+    top: 469px;
+  
+    /* green bleu/500 */
+  
+    background: #004F7B;
+    filter: blur(400px);
+  }
+  
+  .color4 {
+    position: absolute;
+    left: 70.49%;
+    right: -8.96%;
+    top: -7.89%;
+    bottom: -116%;
+  
+    background: #009780;
+    filter: blur(400px);
+  }
+  
+  .color5 {
+    position: absolute;
+    width: 1038.03px;
+    height: 809.01px;
+    left: -310px;
+    top: 1195px;
+  
+    /* pink red/500 */
+  
+    background: #DF0B5D;
+    border: 1px solid #000000;
+    filter: blur(400px);
+  }
+  
+  .color7 {
+  
+    position: absolute;
+    width: 1110.82px;
+    height: 653.45px;
+    left: 109px;
+    top: 1496px;
+  
+    /* green bleu/500 */
+  
+    background: #004F7B;
+    filter: blur(400px);
+  }
+  
+  .color8 {
+    position: absolute;
+    width: 110%;
+    height: 200px;
+    left: -10%;
+    bottom: -177%;
+    z-index: 1;
+    top:280%;
+  }
+  
+  .pos {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .text1 {
+    width: 748px;
+    height: 192px;
+    margin-top: 2rem !important;
+    margin-left: 3rem;
+  
+    font-family: 'Exo 2', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 96px;
+  
+    color: #FFFFFF;
+  }
+  
+  .rectangle {
+    width: 150px;
+    height: 15px;
+    background: #FFFFFF;
+    position: absolute;
+  
+  }
+  
+  .pos1 {
+    margin-top: 20rem;
+    margin-left: 8rem;
+  }
+  
+  .text2 {
+    width: 700px;
+    height: 60px;
+    z-index: 1 !important;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+  }
+  
+  .image {
+    position: absolute;
+  
+    left: 1150px;
+    top: 256px;
+  }
+  
+  .rectangle2 {
+    position: absolute;
+    width: 1250px;
+    height: 16px;
+    left: 20%;
+    top: 900px;
+  
+    background: #D9D9D9;
+    border-radius: 10px;
+  }
+  
+  .text3 {
+    position: absolute;
+    width: 724px;
+    height: 48px;
+    left: 600px;
+    top: 1021px;
+  
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;
+  }
+  
+  .text4 {
+    position: absolute;
+    width: 55%;
+    height: 202px;
+    left: 598px;
+    top: 140%;
+  
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+  
+    color: #FFFFFF;
+  }
+  
+  .image1 {
+    
+    position: absolute;
+    left: 98px;
+    top: 1006px;
+  }
+
+
+
+  
+  .rectangle3 {
+    position: relative;
+    width: 170px;
+    height: 16px;
+    z-index: 1s;
+    margin-left: 47.6%;
+  
+    background: #D9D9D9;
+    border-radius: 10px;
+  }
+  
+  .text5 {
+    position: absolute;
+    width: 265px;
+    height: 58px;
+    margin-left: 45%;
+    margin-top: 20px;
+  
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    /* identical to box height */
+  
+  
+    color: #FFFFFF;
+  }
+  
+  
+  .mAA2 {
+  
+    margin-top: 900px;
+  }
+  
+  
+  .pos3 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 75px;
+  
+    position: absolute;
+    width: 1332.35px;
+    height: 439.81px;
+    left: 62px;
+  
+  }
+  
+  .rec1 {
+    position: absolute;
+    width: 420.35px;
+    height: 0px;
+    left: 421.13px;
+    top: 62.08px;
+  
+    border: 5px solid #000000;
+    transform: rotate(-180deg);
+  }
+  
+  .rec2 {
+    position: absolute;
+    width: 377.73px;
+    height: 0px;
+    left: 232px;
+    top: 251.08px;
+  
+    border: 5px solid #000000;
+    transform: rotate(90deg);
+  }
+  
+  .rec3 {
+    position: absolute;
+    width: 420.35px;
+    height: 0px;
+    left: 421.66px;
+    top: 441.18px;
+  
+    border: 5px solid #000000;
+    transform: rotate(-180deg);
+  }
+  
+  .rec4 {
+    position: absolute;
+    width: 48.4px;
+    height: 0px;
+    left: 817.6px;
+    top: 407.41px;
+  
+    border: 5px solid #000000;
+    transform: rotate(90deg);
+  }
+  
+  .rec5 {
+    position: absolute;
+    width: 216.75px;
+    height: 0px;
+    left: 841.6px;
+    top: 378.94px;
+  
+    border: 5px solid #000000;
+  }
+  
+  .img3 {
+    height: inherit;
+    position: absolute;
+    left: 55%;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    margin-left: 11%;
+    margin-top: 100px;
+    padding-bottom: 200px;
+  }
+  
+  
+  
+  .container .cardh .face {
+    width: 400px;
+    height: 200px;
+    transition: .4s;
+  
+  }
+  
+  .container .cardh .face.face1 {
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+  }
+  
+  .container .cardh:hover .face.face1 {
+    transform: translateY(0);
+    box-shadow:
+      inset 0 0 60px whitesmoke,
+      inset 20px 0 80px rgb(255, 0, 115),
+      inset -20px 0 80px #0ff,
+      inset 20px 0 300px rgb(255, 0, 115),
+      inset -20px 0 300px #0ff,
+      0 0 25px #fff,
+      -10px 0 35px rgb(255, 0, 115),
+      10px 0 35px #0ff;
+  
+  }
+  
+  .container .cardh .face.face1 .content {
+    opacity: .2;
+    transition: 0.5s;
+    text-align: center;
+  }
+  
+  .container .cardh:hover .face.face1 .content {
+    opacity: 1;
+  }
+  
+  .container .cardh .face.face1 .content i {
+    font-size: 3em;
+    color: white;
+    display: inline-block;
+  }
+  
+ 

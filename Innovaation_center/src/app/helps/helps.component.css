@@ -1,0 +1,206 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+.theme-text {
+  color: #474af0;
+}
+
+.card-img-top {
+  height: 200px;
+  width: 100%;
+}
+.card {
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.card:hover {
+  color: white;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  left: -100%;
+  top: 0%;
+  background: #474af0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: -1;
+}
+.card:hover::before {
+  left: 0%;
+  color: white;
+}
+.container-fluid {
+  
+  background-position: center;
+  background-size: cover;
+}
+
+
+.color1 {
+    position: absolute;
+    width: 1038.03px;
+    height: 809.01px;
+    left: -338px;
+    top: -182px;
+   background: #DF0B5D;
+    border: 1px solid #000000;
+    filter: blur(400px);
+}
+.arc{
+  position: absolute;
+  top: 5%;
+  left:20%;
+}
+.circleBase {
+  border-radius: 50%;
+}
+
+.circle1 {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #004F7B;
+  border: 1px solid #000;
+  left:40%;
+  top:220%
+}
+.tt{
+  position: relative;
+  left: 45%;
+  top:198%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+}
+.ttt{
+  position: relative;
+  left: 64%;
+  top:155%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+}
+.circle2 {
+  width: 50px;
+  height: 50px;
+  background: #009780;;
+  border: 1px solid #f0f0f0;
+  position: relative;
+  left:60%;
+  top:177%
+}
+.color2 {
+  position: absolute;
+  left: 70.49%;
+  right: -8.96%;
+  top: -7.89%;
+  bottom: 60.6%;
+  background: #009780;
+  filter: blur(400px);
+}
+
+.color3 {
+  position: absolute;
+  width: 1110.82px;
+  height: 653.45px;
+  left: 125px;
+  top: 469px;
+
+  /* green bleu/500 */
+  
+background: #004F7B;
+filter: blur(400px);
+}
+
+.color4 {
+position: absolute;
+left: 70.49%;
+right: -8.96%;
+top: -7.89%;
+bottom: -116%;
+
+background: #009780;
+filter: blur(400px);
+}
+
+.color5 {
+position: absolute;
+width: 1038.03px;
+height: 809.01px;
+left: -310px;
+top: 1195px;
+
+/* pink red/500 */
+
+background: #DF0B5D;
+border: 1px solid #000000;
+filter: blur(400px);
+}
+
+.color7 {
+
+position: absolute;
+width: 1110.82px;
+height: 653.45px;
+left: 109px;
+top: 1496px;
+
+/* green bleu/500 */
+
+background: #e94a94;
+filter: blur(400px);
+}
+
+.color8 {
+position: absolute;
+width: 110%;
+height: 200px;
+left: -10%;
+bottom: -177%;
+z-index: 1;
+top:280%;
+}
+
+.pos {
+position: relative;
+z-index: 1;
+}
+
+.text1 {
+width: 748px;
+height: 192px;
+margin-top: 2rem !important;
+margin-left: 3rem;
+
+font-family: 'Exo 2', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 80px;
+line-height: 96px;
+
+color: #FFFFFF;
+}
+
+.account-settings .user-profile {
+margin: 0 0 1rem 0;
+padding-bottom: 1rem;
+text-align: center;
+}
+
+
+

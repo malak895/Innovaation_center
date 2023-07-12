@@ -1,0 +1,90 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,500&family=Inter:wght@500&display=swap"
+  rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
+<div class="all">
+  <div class="color">
+    <div class="color1"></div>
+    <div class="color2"></div>
+    <div class="color3"></div>
+    <div class="color4"></div>
+    <div class="color5"></div>
+    <div class="color7"></div>
+  </div>
+</div>
+<div class="wrapper ">
+    <div class="profile-card js-profile-card">
+      <div class="profile-card__img">
+        <img class="img" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="profile card">
+      </div>
+  
+      <div class="profile-card__cnt js-profile-cnt">
+        <div class="profile-card__name">Admin S2T</div>
+        <div class="profile-card__txt"> <strong>contact@s2t.tn</strong></div>
+        <div class="profile-card-loc">
+          <span class="profile-card-loc__icon">
+            <svg class="icon"><use xlink:href="#icon-location"></use></svg>
+          </span>
+  
+          <span class="profile-card-loc__txt">
+            I'm an administrator at Smart Tunisian Technoparks.
+          </span>
+        </div>
+  
+        <form  class=" form-group col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12" (ngSubmit)="update()">
+            <div>
+            <div class="card h-100"  >
+                <div class="card-body">
+                    <div class="row gutters">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h6 class="mb-2 text-primary">Personal Details</h6>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="fullName"></label>
+                             
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Full Name</label>
+                            <input type="text" [(ngModel)]="firstname" [ngModelOptions]="{standalone: true}" class="form-control" id="fullName" placeholder="Enter full name">
+                          </div>
+                          
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email"  [(ngModel)]="email" [ngModelOptions]="{standalone: true}" class="form-control" id="eMail" placeholder="Enter email ID">
+                           
+                        </div>
+        
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="text"   [(ngModel)]="password" [ngModelOptions]="{standalone: true}"  class="form-control" id="phone" placeholder="Enter matricule number"> 
+                          </div>
+                    </div>
+                    <div class="row gutters">
+                       
+                    </div>
+                </div>
+            </div>
+            </div>
+            </form>
+    
+  
+        <div class="profile-card-ctr">
+          <button class="profile-card__button button--blue js-message-btn" (click)="save()" >Update</button>
+          <button class="profile-card__button button--orange" routerLink="/admin" >Cancel</button>
+        </div>
+      </div>
+  
+    
+  
+    </div>
+  
+  </div>
+  
+
+ 
