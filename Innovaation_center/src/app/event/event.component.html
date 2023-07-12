@@ -1,0 +1,112 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event Page</title>
+</head>
+
+<body>
+  <app-navbar></app-navbar>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,500&family=Inter:wght@500&display=swap"
+  rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
+
+    <div class="all">
+    <div class="color">
+      <div class="color1"></div>
+      <div class="color2"></div>
+      <div class="color3"></div>
+      <div class="color4"></div>
+      <div class="color5"></div>
+      <div class="color7"></div>
+      
+    </div>
+    </div>
+<section class="nbox ">
+        <div class="box">
+            <span style="--i:1;"><img src="../../assets/img/njarb/event1.jpg"></span>
+            <span style="--i:2;"><img src="../../assets/img/njarb/event2.jpg"></span> 
+            <span style="--i:3;"><img src="../../assets/img/njarb/event3.jpg"></span>  
+            <span style="--i:4;"><img src="../../assets/img/njarb/event4.jpg"></span>
+            <span style="--i:5;"><img src="../../assets/img/njarb/event5.jpg"></span>
+            <span style="--i:6;" routerLink="/event1"><img src="../../assets/img/njarb/img1.jpeg"></span>  
+            <span style="--i:7;" routerLink="/event2" ><img src="../../assets/img/njarb/img4.jpeg"></span>
+            
+
+
+        </div>
+ 
+
+</section>
+<section class="i-event" >
+
+  
+  <div class="i-card">
+ <div class="card">
+        <div class="cover">
+            <img  class =" img01"src="../../assets/img/312616215_491070636378611_569580711123836687_n 1.png" alt="">
+        </div>
+        <div class="details">
+            <div>
+                <img src="" alt="">
+                <h3></h3>
+                <h3>ESSAI ENTREPRISES OPEN DOORS 4.0 </h3>
+                <h4>Lorem ipsum dolor sit amet. Et illum nobis eum ipsam pariatur At voluptates distinctio ea eligendi autem sit eveniet assumenda vel voluptatibus quae et sunt aspernatur.</h4>
+            </div>
+        </div>
+    </div>
+  </div>   
+
+
+
+  <div class="i-cardl">
+    <div class="cardl">
+      <div class="coverl">
+          <img  class =" img01"src="../../assets/img/312616215_491070636378611_569580711123836687_n 1.png" alt="">
+      </div>
+      <div class="details">
+          <div>
+              <img src="" alt="">
+              <h3>New Event name </h3>
+              <h2>Description</h2>
+          </div>
+      </div>
+  </div>
+</div>
+  </section>
+
+  <section class="i-event">
+    <div *ngFor="let event of events" class="i-card">
+      <div class="card">
+        <div class="cover">
+          <img class="img01" [src]="getImageSrc(event)" alt="">
+        </div>
+        <div class="details">
+          <div>
+            <img src="" alt="">
+            <h3>{{ event.titre }}</h3>
+            <h4>{{ event.description }}</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+
+</body>
+
+
+
+
+
+

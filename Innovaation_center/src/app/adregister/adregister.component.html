@@ -1,0 +1,25 @@
+<div class="login-card-header">
+    <h1>Register</h1>
+    <div>Please Register to use the platform</div>
+</div>
+
+<form class="login-card-form" (ngSubmit)="save()">
+    <div class="form-item">
+        <span class="form-item-icon material-symbols-rounded">Person</span>
+        <input type="text"  [(ngModel)]="firstname" [ngModelOptions]="{standalone: true}" class="form-control" id="stname" placeholder="firstname" 
+        autofocus required>
+    </div>
+
+    <div class="form-item">
+        <span class="form-item-icon material-symbols-rounded">mail</span>
+        <input type="text"  [(ngModel)]="email" [ngModelOptions]="{standalone: true}" class="form-control" id="course"   placeholder="Enter Email"
+        autofocus required>
+    </div>
+    <div class="form-item">
+        <span class="form-item-icon material-symbols-rounded">lock</span>
+        <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" class="form-control" id="fee" placeholder="Enter Password" id="passwordForm"
+         required>
+    </div>
+  
+    <button type="submit" (click)="save()"  routerLink="/home"> Register</button>
+</form>
